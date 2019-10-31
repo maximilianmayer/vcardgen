@@ -8,14 +8,9 @@ require 'rqrcode'
 
 unless ARGV.length == 0
   @infile = ARGV[0]
-  if ARGV[1] == 'v' 
-    @verbose = true
-  else
-    @verbose = false
-  end
 else
-  puts "no params set, using defaults"
   @infile = 'vcard.yaml'
+  puts "no input file set, using default #{@infile}"
 end
 def gen_vcard()
   data = YAML.load_file(@infile)['vcard']
@@ -29,7 +24,6 @@ def gen_vcard()
   vcard.org data['company'], data['department']
   vcard.title data['title']
   vcard.tel data['tel']['mobile'], :type =>['cell']
-  puts vcard.to_s if @verbose
   return vcard.to_s
 end
 
