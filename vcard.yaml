@@ -1,0 +1,12 @@
+vcard:
+  name: Your Name
+  email: your.mail@address.tld
+  tel:
+    mobile: '+491710001111'
+    fax: '+49890000000'
+  company: Your company Ltd.
+  department: Department of Department
+  title: CEO
+  Address: 'Musterweg 123, 99999 Musterdorf, Deutschland'
+  url: https://your.website.here
+  
