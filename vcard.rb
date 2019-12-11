@@ -50,6 +50,5 @@ def gen_qr(vcard)
   end
 end
 
-a = gen_vcard
-gen_qr a
+gen_qr gen_vcard
 
