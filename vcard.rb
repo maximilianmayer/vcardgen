@@ -6,7 +6,7 @@ require 'json'
 require 'vcardigan'
 require 'rqrcode'
 
-unless ARGV.length == 0
+unless ARGV.empty?
   @infile = ARGV[0]
 else
   @infile = 'vcard.yaml'
